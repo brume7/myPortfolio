@@ -1,3 +1,10 @@
+:root{
+  --textColor1: azure;
+  --secColor1: #bed4e5;
+  --fontFamily: sans-serif;
+  --fontSize: 1.7em;
+  --fontSize2: 3em;
+}
 *{
     box-sizing: border-box;
     border: 0;
@@ -6,16 +13,13 @@
 }
 html, body, main{
     width: 100%;
-    z-index: -2;
     overflow-x: hidden;
 }
 body{
-    z-index: -2;
     background-color: #131e63;
     
 }
 main{
-    z-index: -1;
     background-color: rgba(83, 157, 196, 0.44);
 }
 
@@ -23,7 +27,6 @@ main{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     height: 40px;
     overflow: hidden;   
     width: 100%;
@@ -31,7 +34,10 @@ nav{
 
 nav > ul{
     display: flex;
-    flex-direction: row;
+    margin: 0px auto;
+    width: 50%;
+    justify-content: space-evenly;
+    flex-direction:row;
     list-style: none;
 }
 nav > ul > li{
@@ -39,9 +45,13 @@ nav > ul > li{
 }
 nav > ul > li > a{
     color: white;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
     text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+  color: var(--secColor1);
 }
 
 .circle{
@@ -86,40 +96,55 @@ nav > ul > li > a{
     right: -14%;
 }
 
-#home{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 1000px;
+.hero{
+  margin: 0 auto 25% auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+ 
 }
 
-#home header{
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #BED4E5;
-    position: absolute;
-    top:50%;
-    z-index: 1;
+.hero-text{
+  color: var(--textColor1);
+  width: 30%;
+  height:30% ;
+  margin: 100px 0 0 20%;
+  padding: 0;
+
 }
 
-#home p{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #BED4E5;
-    position: absolute;
-    top:57%;
-    left: 32%;
-    z-index: 1;
+h1{
+  text-align: center;
+  font-size: var(--fontSize2);
+  font-weight:bolder;
+  padding: 0;
+  margin:0;
 }
 
-#home img{
-    width: 774.04px;
-    height: 464.4px;
-    position: absolute;
-    top:30%;
-    right: 10%;
 
+
+.hero span{
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--secColor1);
+
+}
+
+
+.hero h3{
+  text-align: center;
+  margin:0;
+  padding: 0;
+  font-weight:550;
+  font-size: 2.4em;
+}
+
+/* hero image */
+.hero img{
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 37%;
 }
 #about{
     margin-top: 10px;
@@ -138,16 +163,16 @@ nav > ul > li > a{
 }
 
 #about p:first-of-type{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fontFamily);
     margin-top: 60px;
-    font-size: 30px;
-    color: #FFFFFF;
+    font-size: var(--fontSize);
+    color: var(--textColor1);
 }
 
 #about header{
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFFFFF;
+    font-size: var(--fontSize2);
+    font-family: var(--fontFamily);
+    color: var(--textColor1);
 }
 
 #dcirc3 {
@@ -162,7 +187,7 @@ nav > ul > li > a{
     height: 200px;
     position: absolute;
     z-index: -1;
-    top: 115%;
+    top: 80%;
     right: 30%;
 }
 
@@ -178,10 +203,10 @@ nav > ul > li > a{
 
 #projectH{
     margin-top: 20px;
-    font-size: 50px;
+    font-size: var(--fontSize2);
     text-align: center;
-    color: #FFFFFF;
-    font-family: 'Times New Roman', Times, serif;
+    color: var(--textColor1);
+    font-family: var(--fontFamily);
 }
 
 #projects{
@@ -211,6 +236,7 @@ nav > ul > li > a{
   
   .project-tile a{
     display: flex;
+    font-size: 0.5em;
     flex-direction: column;
     align-items: center;
     color: white;
@@ -220,7 +246,7 @@ nav > ul > li > a{
     display: none;
   }
   .project-tile:hover span{
-    color: red;
+    color: var(--secColor1);
     display: inline;
   }
 
@@ -228,96 +254,22 @@ nav > ul > li > a{
     text-decoration: none;
   }
 
-  button {
+  #project-div button {
     margin: 20px auto;
-  }
-  .custom-btn {
     width: 130px;
     height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
-  .btn-12{
-    position: relative;
-    right: 20px;
-    bottom: 20px;
-    border:none;
-    box-shadow: none;
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
-    -webkit-perspective: 230px;
-    perspective: 230px;
-  }
-  .btn-12 span {
-    background: rgb(0,172,238);
-  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
-    display: block;
-    position: absolute;
-    width: 130px;
-    height: 40px;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    background: var(--secColor1);
+    border: 1px solid var(--secColor1);
     border-radius: 5px;
-    margin:0;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    transition: all 0.5s ease;
   }
-  .btn-12 span:nth-child(1) {
-    box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 5px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
-    -webkit-transform: rotateX(90deg);
-    -moz-transform: rotateX(90deg);
-    transform: rotateX(90deg);
-    -webkit-transform-origin: 50% 50% -20px;
-    -moz-transform-origin: 50% 50% -20px;
-    transform-origin: 50% 50% -20px;
+
+  #project-div button:hover{
+    background: transparent;
   }
-  .btn-12 span:nth-child(2) {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: 50% 50% -20px;
-    -moz-transform-origin: 50% 50% -20px;
-    transform-origin: 50% 50% -20px;
-  }
-  .btn-12:hover span:nth-child(1) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-  }
-  .btn-12:hover span:nth-child(2) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-   color: transparent;
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-  }
+  
   
   #contacts {
     margin-top: 30px;
@@ -328,14 +280,14 @@ nav > ul > li > a{
     margin-top: 20px;
     font-size: 50px;
     text-align: center;
-    color: #BED4E5;
-    font-family: 'Times New Roman', Times, serif;
+    color: var(--textColor1);
+    font-family: var(--fontFamily);
   }
   #contacts > p{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
     text-align: center;
-    color: #BED4E5;
+    color: var(--textColor1);
     
   }
 

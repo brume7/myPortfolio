@@ -20,6 +20,7 @@ body{
     
 }
 main{
+  width: 100%;
     background-color: rgba(83, 157, 196, 0.44);
 }
 
@@ -43,11 +44,15 @@ nav > ul{
 nav > ul > li{
     padding: 0px 20px;
 }
-nav > ul > li > a{
+nav a{
     color: white;
     font-size: var(--fontSize);
     font-family: var(--fontFamily);
     text-decoration: none;
+}
+
+nav > a {
+  display: none;
 }
 
 nav > ul > li > a:hover{
@@ -307,9 +312,7 @@ h1{
     width: 20px;
   
    }
-   .fa-github{
-    width: 100%;
-   }
+
    .icons img {
     width: 50%;
     margin: 0 0 0 25%;
@@ -325,4 +328,121 @@ h1{
     width: 96%;
   
    }
+
+@media (max-height: 918px) {
+
+  #dcirc2, #dcirc1{
+    display: none;
+  }
+  #about-img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 90%;
+    right: 27%;
+  }
+  
+}
+
+@media (max-width: 1500px) {
+  .circle{
+    width: 500px;
+    height: 500px;
+}
+#about-img{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  right: 27%;
+}
+}
+
+@media (max-width: 1400px) {
+  .hero-text{
+   
+    margin: 100px 0 0 15%;
+  
+  }
+}
+@media (max-width: 1000px) {
+  .hero-text{
+   
+    margin: 100px 0 0 10%;
+  
+  }
+}
+@media (max-width: 800px) {
+  .circle{
+    visibility: hidden;
+  }
+  .hero img{
+    display: none;
+  }
+.hero-text{
+  color: var(--textColor1);
+  width: 100%;
+  height:100% ;
+  margin: 100px 0 0 0 20%;
+  padding: 0;
+  text-align: center;
+}
+.hero{
+  margin: 0 0 25% 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+#about-img{
+  display: none;
+}
+.project-tile{
+  margin: 40px auto;
+  width: 90%;
+  height: 320px;
+  }
+
+  #about label{
+    display: block;
+    width: 98%;
+    overflow: hidden;
+}
+
+  #about p{
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .icons p{
+    display: none;
+   }
+
+   .icon{
+    justify-content: center;
+   align-items: center;
+    width: 30%;
+   }
+
+}
+
+@media (max-width: 550px) {
+  nav ul{
+    display: none;
+  }
+
+  nav > a{
+    display: flex;
+  }
+
+  nav{
+    place-items: center;
+    justify-content:space-evenly;
+  }
+
+  
+}
 

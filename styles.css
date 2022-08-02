@@ -264,7 +264,8 @@ h1{
     width: 130px;
     height: 40px;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
+    color: var(--textColor1);
     background: var(--secColor1);
     border: 1px solid var(--secColor1);
     border-radius: 5px;
@@ -273,6 +274,7 @@ h1{
 
   #project-div button:hover{
     background: transparent;
+    color: var(--secColor1);
   }
   
   
@@ -306,6 +308,7 @@ h1{
   
    .icons p{
     display: flex;
+    color: var(--secColor1);
     justify-content: center;
    }
    .icons a{

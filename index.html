@@ -1,111 +1,723 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="shortcut icon" href="./assest/web-programming.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8"/>
-        <meta name="description" content="Akpadaka Oghenebrume's web portfolio">
-        <title>brume's portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <main>
-            <img class="circle" id="circ1" src="./assest/Ellipse_1.png" alt="" loading="lazy">
-            <img class = "circle" id="dcirc1" src="./assest/Ellipse_5.png" alt="" loading="lazy">
-            <img class="circle" id="circ2" src="./assest/Ellipse_1.png" alt="" loading="lazy">
-            <img class="circle" id="circ3" src="./assest/Ellipse_1.png" alt="" loading="lazy">
-            <img class = "circle" id="dcirc2" src="./assest/Ellipse_5.png" alt="" loading="lazy">
-            <img class="circle" id="circ4" src="./assest/Ellipse_1.png" alt="" loading="lazy">
- 
-            <nav>
-                <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#project-div">Projects</a></li>
-                    <li><a href="./assest/Akpadaka_Oghenebrume_Resume_18-07-2022-22-06-59.pdf">Resume</a></li>
-                    <li><a href="#contacts">Contact me</a></li>
-                </ul>
-                <a href="./assest/Akpadaka_Oghenebrume_Resume_18-07-2022-22-06-59.pdf">Resume</a>
-                <a href="#contacts">Contact me</a>
-            </nav>
-            <section id="home" class="hero">
-                <div class="hero-text">
-                    <h1>Hey</h1>
-                   <div class="hero-name">
-                    <h3>I am <span>Oghenebrume Akpadaka</span></h3>
-                </div>
-                    <h3 class="developer">A full-stack developer</h3>
-                </div>
-            
-                <div class="computer-icon">
-                    <img src="./assest/workspace-with-computer.png" alt="">
-                </div>
-               
-             </section>            
-            <section id="about">
-            <img class="circle" id="dcirc3" src="./assest/Ellipse_5.png" alt="" loading="lazy">
-            <img id="about-img" src="./assest/undraw_programming_re_kg9v.svg" alt="" loading="lazy">
-            <label>
-                <header>About me</header>
-                <p>Dedicated computer science fresh graduate seeking an internship in a field related to computer science
-                    particularly in relating to software development. A team player with excellent written and verbal communication
-                    abilities who enjoys programming and is open to learn new skills. My working style includes adapting to different
-                    work environments. And during my year as a freelancer at TOPTAL I have worked as full stack developer for
-                    multiple clients and recently i worked for a stater company in Nigeria.
-                    </p>
-                <p></p>
-                </label>
-            </section>
-            <section id="project-div">
-            <header id="projectH">Projects</header>
-            <section id="projects">
-                <section class="project-tile">
-                    <a href="https://brume7.github.io/Movie-Application/" target="_blank"><img src="https://i.ibb.co/Yy2bqX2/Screenshot-from-2022-07-04-23-28-20.png" alt=""/>
-                    <h3><span class="code">&lt;</span> movie info application <span class="code">&#47;&gt;</span></h3></a>
-                  </section>
-                  <section class="project-tile">
-                    <a href="https://brume7.github.io/Chat-Appliction/" target="_blank"><img src="https://i.ibb.co/bz7f0kf/Screenshot-from-2022-07-04-23-55-31.png" alt=""/>
-                    <h3><span class="code">&lt;</span> chat application <span class="code">&#47;&gt;</span></h3></a>
-                  </section>
-                  <section class="project-tile">
-                    <a href="https://weather-now-ap.herokuapp.com/" target="_blank"><img src="https://i.ibb.co/HGxJpjs/Screenshot-from-2022-09-23-22-12-50.png" alt=""/>
-                    <h3><span class="code">&lt;</span> weather forecast application <span class="code">&#47;&gt;</span></h3></a>
-                  </section>
-            </section>
-            <a href="https://github.com/brume7" target="_blank"><button class="custom-btn btn-12">View More</button></a>
-        </section>
-        <section id="contacts">
-            <header>Contact Me</header>
-            <p>Let's work together</p>
-                <div class="icons">
-                    <div class="icon">
-                        <div class="icon-img">
-                            <a href="mailto: brumeakpadaka@gmail.com"><img src="./assest/email.svg" alt=""></a>
-                        </div>
-                        
-                        <p>Email</p>
-                        <p>brumeakpadaka@gmail.com</p>
-                    </div>
-            
-                    <div class="icon">
-                        <div class="icon-img">
-                            <a href="https://www.linkedin.com/in/oghenebrume-akpadaka-b14315172/" target="_blank"><img src="./assest/linkedin.svg" alt=""></a>
-                        </div>
-                       
-                        <p>Linkedin</p>
-                        <p>follow me</p>
-                    </div>
+<html style="font-size: 16px" lang="en-AU">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Julian Mack, Experiences, ​Portfolio, ​Build your website
+in record time"
+    />
+    <meta
+      name="description"
+      content="Explore a world of creativity and innovation with my frontend web development portfolio. I craft interactive and user-friendly web experiences to bring your ideas to life. Discover a showcase of my projects and skills in HTML, CSS, JavaScript, and more. Let's build the web together!"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="Home.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 5.20.7, nicepage.com" />
+    <meta name="referrer" content="origin" />
+    <link rel="icon" href="images/favicon.png" />
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
 
-                    <div class="icon">
-                        <div class="icon-img">
-                            <a href="https://github.com/brume7" target="_blank"><img src="./assest/github.svg" alt=""></a>
-                        </div>
-                       
-                        <p>Github</p>
-                        <p>@brume7</p>
-                    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Site2",
+        "logo": "images/default-logo.png"
+      }
+    </script>
+    <meta name="theme-color" content="#478ac9" />
+    <meta property="og:title" content="Home" />
+    <meta
+      property="og:description"
+      content="Explore a world of creativity and innovation with my frontend web development portfolio. I craft interactive and user-friendly web experiences to bring your ideas to life. Discover a showcase of my projects and skills in HTML, CSS, JavaScript, and more. Let's build the web together!"
+    />
+    <meta property="og:type" content="website" />
+    <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+  </head>
+  <body
+    data-home-page="Home.html"
+    data-home-page-title="Home"
+    data-path-to-root="./"
+    data-include-products="false"
+    class="u-body u-xl-mode"
+    data-lang="en"
+  >
+    <header
+      class="u-clearfix u-header u-palette-5-dark-3 u-header"
+      id="sec-dec6"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="/"
+          class="u-image u-logo u-image-1"
+          data-image-width="80"
+          data-image-height="40"
+          title="home"
+        >
+          <img
+            src="images/default-logo.png"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+      </div>
+    </header>
+    <section
+      class="u-clearfix u-image u-section-1"
+      id="sec-7ab1"
+      data-image-width="1980"
+      data-image-height="1320"
+    >
+      <div
+        class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1"
+      >
+        <div class="u-gutter-0 u-layout" style="">
+          <div class="u-layout-row" style="">
+            <div
+              class="u-align-left u-container-style u-layout-cell u-size-27-lg u-size-27-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1500"
+              data-animation-delay="0"
+            >
+              <div class="u-container-layout u-container-layout-1">
+                <h3 class="u-align-left u-text u-text-body-alt-color u-text-1">
+                  I’m a Software Engineer
+                </h3>
+                <h2
+                  class="u-align-left u-text u-text-body-alt-color u-text-2"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1250"
+                  data-animation-delay="750"
+                >
+                  Oghenebrume Akpadaka
+                </h2>
+                <div
+                  class="u-align-left u-border-1 u-border-palette-5-light-1 u-line u-line-horizontal u-opacity u-opacity-30 u-line-1"
+                ></div>
+                <p
+                  class="u-align-left u-text u-text-palette-5-light-2 u-text-3"
+                >
+                  Date of Birth:&nbsp; &nbsp;<span style="font-weight: 400"
+                    >&nbsp; Mar 21, 2002</span
+                  >
+                  <br />Address:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;&nbsp;<span style="font-weight: 400"
+                    >&nbsp;Elm Street hell road</span
+                  >
+                  <br />E-mail:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp;<span style="font-weight: 400">
+                    <a
+                      href="https://nicepage.studio"
+                      class="u-active-none u-border-1 u-border-active-palette-5-light-2 u-border-hover-palette-5-light-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-active-palette-5-light-2 u-text-body-alt-color u-text-hover-palette-5-light-2 u-top-left-radius-0 u-top-right-radius-0 u-btn-1"
+                      >&nbsp;brumeakpadaka@gmail.com</a
+                    >
+                  </span>
+                  <span style="font-size: 1.25rem"></span>
+                  <br />Phone:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;<span style="font-weight: 400"
+                    >&nbsp; &nbsp;
+                    <a
+                      href="https://nicepage.studio"
+                      class="u-active-none u-border-1 u-border-active-palette-5-light-2 u-border-hover-palette-5-light-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-link u-button-style u-hover-none u-none u-text-active-palette-5-light-2 u-text-body-alt-color u-text-hover-palette-5-light-2 u-btn-2"
+                      data-animation-name=""
+                      data-animation-duration="0"
+                      data-animation-delay="0"
+                      data-animation-direction=""
+                      >+2349066602297</a
+                    >
+                  </span>
+                </p>
+                <a
+                  href="files/recent.pdf"
+                  class="u-active-palette-5-dark-2 u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-file-link u-hover-palette-5-dark-2 u-palette-3-base u-radius-8 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-3"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="250"
+                  >Download cv&nbsp;&nbsp;<span
+                    class="u-file-icon u-icon u-text-white u-icon-1"
+                    ><img src="images/959159-5d3ea7b7.png" alt=""
+                  /></span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="u-container-align-center u-container-style u-image u-layout-cell u-size-33-lg u-size-33-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1"
+              data-image-width="500"
+              data-image-height="500"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1500"
+              data-animation-delay="0"
+            >
+              <div class="u-container-layout u-container-layout-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-gradient u-section-2"
+      id="carousel_0681"
+    >
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2
+          class="u-text u-text-body-alt-color u-text-default u-text-1"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1500"
+          data-animation-delay="0"
+        >
+          Experiences
+        </h2>
+        <p
+          class="u-custom-font u-text u-text-palette-5-light-2 u-text-2"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1500"
+          data-animation-delay="500"
+        >
+          As a Software Engineer, I've had the opportunity to delve into the
+          world of coding, solving complex problems, and crafting innovative
+          software solutions. My journey has included collaborating on diverse
+          projects and pushing the boundaries of technology to deliver
+          outstanding results. Explore my portfolio to see some of the software
+          engineering work that drives my passion.
+        </p>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div
+              class="u-align-left u-container-style u-list-item u-repeater-item"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-1"
+              >
+                <p
+                  class="u-custom-font u-text u-text-palette-5-light-2 u-text-3"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1750"
+                >
+                  December, 2021 – Mar, 2022
+                </p>
+                <div
+                  class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="750"
+                >
+                  <div
+                    class="u-container-layout u-valign-top u-container-layout-2"
+                  >
+                    <h5
+                      class="u-custom-font u-text u-text-default u-text-palette-3-base u-text-4"
+                    >
+                      Senior Analyst
+                    </h5>
+                    <p
+                      class="u-custom-font u-text u-text-palette-5-light-1 u-text-5"
+                    >
+                      As a Senior Analyst at HCL, I played a pivotal role in
+                      data-driven decision-making and process optimization. I
+                      leveraged data analysis tools to extract insights,
+                      identified process inefficiencies, and led projects that
+                      enhanced efficiency and reduced costs. I created
+                      comprehensive reports and collaborated with
+                      cross-functional teams, ensuring alignment for successful
+                      project execution. My commitment to staying current with
+                      industry trends allowed me to contribute significantly to
+                      HCL's operational excellence, and I'm excited to bring my
+                      expertise to future opportunities.
+                    </p>
+                    <a
+                      href="https://www.linkedin.com/company/hcltech/"
+                      class="u-active-none u-btn u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1"
+                    >
+                      HCL Technologies</a
+                    >
+                  </div>
                 </div>
-            </section>
-        </main>
-    </body>
+              </div>
+            </div>
+            <div
+              class="u-align-left u-container-style u-list-item u-repeater-item"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-3"
+              >
+                <p
+                  class="u-custom-font u-text u-text-palette-5-light-2 u-text-6"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1750"
+                >
+                  August, 2022 – December, 2023
+                </p>
+                <div
+                  class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-2"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="750"
+                >
+                  <div
+                    class="u-container-layout u-valign-top u-container-layout-4"
+                  >
+                    <h5
+                      class="u-custom-font u-text u-text-default u-text-palette-3-base u-text-7"
+                    >
+                      Front-end web Developer
+                    </h5>
+                    <p
+                      class="u-custom-font u-text u-text-palette-5-light-1 u-text-8"
+                    >
+                      As a Front-End Web Developer at Pyvault, I excelled in
+                      creating visually stunning and highly functional websites.
+                      I focused on responsive web development, collaborating
+                      with designers to implement captivating user interfaces. I
+                      ensured cross-browser compatibility, optimized
+                      performance, and conducted thorough testing and debugging.
+                      My work involved version control and close collaboration
+                      with back-end developers, resulting in the timely delivery
+                      of high-quality web solutions. I continuously expanded my
+                      skills to keep pace with evolving web development trends
+                      and technologies, making a significant impact on Pyvault's
+                      web projects
+                    </p>
+                    <a
+                      href="https://www.linkedin.com/company/queryfier/"
+                      class="u-active-none u-btn u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2"
+                    >
+                      Pyvault (Queryfier)</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="mailto:brumeakpadaka@gmail.com?subject=Inquiry%20on%20a%20software%20project"
+          class="u-active-white u-border-none u-btn u-btn-round u-button-style u-hover-white u-palette-3-base u-radius-8 u-text-active-grey-80 u-text-body-alt-color u-text-hover-grey-80 u-btn-3"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1750"
+          data-animation-delay="750"
+          >contact me
+        </a>
+      </div>
+    </section>
+    <section
+      class="u-align-center u-clearfix u-container-align-center u-palette-5-dark-3 u-section-3"
+      id="carousel_902e"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2
+          class="u-align-center u-text u-text-1"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1500"
+          data-animation-delay="750"
+        >
+          Projects
+        </h2>
+        <p
+          class="u-align-center u-text u-text-2"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1250"
+          data-animation-delay="750"
+        >
+          Explore a selection of my standout projects, each a testament to my
+          dedication to creating innovative and functional solutions. These
+          projects showcase my skills in web development, software engineering,
+          and problem-solving. Dive into the world of my creations and witness
+          the impact of cutting-edge technology
+        </p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-1"
+              src=""
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1750"
+              data-animation-delay="500"
+            >
+              <div
+                class="u-container-layout u-similar-container u-valign-top u-container-layout-1"
+              >
+                <img
+                  class="u-expanded-width u-image u-image-1"
+                  src="images/Screenshot2023-10-26173023.png"
+                  data-image-width="1920"
+                  data-image-height="1038"
+                  alt="votes pro"
+                />
+                <h5
+                  class="u-align-center u-text u-text-palette-5-dark-1 u-text-3"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1750"
+                  data-animation-delay="500"
+                >
+                  <a href="https://votespro.com" target="_blank"
+                    >E-voting website</a
+                  >
+                </h5>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-2"
+              src=""
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1750"
+              data-animation-delay="500"
+            >
+              <div
+                class="u-container-layout u-similar-container u-valign-top u-container-layout-2"
+              >
+                <img
+                  class="u-expanded-width u-image u-image-2"
+                  src="images/Screenshot2023-10-27102422.png"
+                  data-image-width="1912"
+                  data-image-height="929"
+                  alt="votes pro"
+                />
+                <h5
+                  class="u-align-center u-text u-text-palette-5-dark-1 u-text-4"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1750"
+                  data-animation-delay="500"
+                >
+                  <a
+                    href="https://nameless-basin-36851.herokuapp.com/"
+                    target="_blank"
+                    >Social media website</a
+                  >
+                </h5>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-3"
+              src=""
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1750"
+              data-animation-delay="500"
+            >
+              <div
+                class="u-container-layout u-similar-container u-valign-top u-container-layout-3"
+              >
+                <img
+                  class="u-expanded-width u-image u-image-3"
+                  src="images/gfgggggggggg.jpg"
+                  data-image-width="1000"
+                  data-image-height="914"
+                  alt="votes pro"
+                />
+                <h5
+                  class="u-align-center u-text u-text-palette-5-dark-1 u-text-5"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1750"
+                  data-animation-delay="500"
+                >
+                  Suggestive back-end with ML
+                </h5>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-4"
+              src=""
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1750"
+              data-animation-delay="500"
+            >
+              <div
+                class="u-container-layout u-similar-container u-valign-top u-container-layout-4"
+              >
+                <img
+                  class="u-expanded-width u-image u-image-4"
+                  src="images/fgfg.jpg"
+                  data-image-width="898"
+                  data-image-height="898"
+                  alt="votes pro"
+                />
+                <h5
+                  class="u-align-center u-text u-text-palette-5-dark-1 u-text-6"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1750"
+                  data-animation-delay="500"
+                >
+                  Mobile Application
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-align-center u-clearfix u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-gradient u-section-4"
+      src=""
+      id="carousel_c9e4"
+    >
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div
+          class="u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1"
+        >
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h3
+              class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-text u-text-body-alt-color u-text-1"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1750"
+              data-animation-delay="0"
+            >
+              About me
+            </h3>
+            <p
+              class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-text u-text-body-alt-color u-text-2"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1500"
+              data-animation-delay="500"
+            >
+              I'm a passionate software engineer committed to solving complex
+              challenges and bringing innovative ideas to life. With a solid
+              foundation in software development and a dedication to staying at
+              the forefront of technology trends, I've ventured into domains
+              ranging from full-stack web development to data analysis and
+              Django REST framework mastery. My work not only drives business
+              success but also leaves a positive impact on end-users.I'm eager
+              to connect with professionals, exchange knowledge, and explore
+              opportunities to contribute to impactful projects and innovative
+              software solutions. Let's connect and shape the ever-evolving
+              world of technology together.<br />
+            </p>
+            <a
+              href="mailto:brumeakpadaka@gmail.com?subject=Inquiry%20on%20a%20software%20project"
+              class="u-active-white u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-border-none u-btn u-btn-round u-button-style u-hover-white u-palette-3-base u-radius-8 u-text-active-grey-80 u-text-body-alt-color u-text-hover-grey-80 u-btn-1"
+              data-animation-name="customAnimationIn"
+              data-animation-duration="1750"
+              data-animation-delay="750"
+              >contact me
+            </a>
+          </div>
+        </div>
+        <div
+          class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1"
+        >
+          <div class="u-repeater u-repeater-1">
+            <div
+              class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-2"
+              >
+                <div
+                  class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-2"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="500"
+                >
+                  <div class="u-container-layout u-valign-middle">
+                    <h3
+                      class="u-align-center u-hover-feature u-text u-text-default u-text-3"
+                      data-animation-name="counter"
+                      data-animation-event="scroll"
+                      data-animation-duration="3000"
+                    >
+                      95%
+                    </h3>
+                  </div>
+                </div>
+                <h5
+                  class="u-align-center u-text u-text-body-alt-color u-text-default u-text-4"
+                >
+                  full Stack web Developer
+                </h5>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-4"
+              >
+                <div
+                  class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-3"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="500"
+                >
+                  <div class="u-container-layout u-valign-middle">
+                    <h3
+                      class="u-align-center u-hover-feature u-text u-text-default u-text-5"
+                      data-animation-name="counter"
+                      data-animation-event="scroll"
+                      data-animation-duration="3000"
+                    >
+                      75%
+                    </h3>
+                  </div>
+                </div>
+                <h5
+                  class="u-align-center u-text u-text-body-alt-color u-text-default u-text-6"
+                >
+                  Web design
+                </h5>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-6"
+              >
+                <div
+                  class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-4"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="500"
+                >
+                  <div class="u-container-layout u-valign-middle">
+                    <h3
+                      class="u-align-center u-hover-feature u-text u-text-default u-text-7"
+                      data-animation-name="counter"
+                      data-animation-event="scroll"
+                      data-animation-duration="3000"
+                    >
+                      80%
+                    </h3>
+                  </div>
+                </div>
+                <h5
+                  class="u-align-center u-text u-text-body-alt-color u-text-default u-text-8"
+                >
+                  Django rest framework&nbsp;
+                </h5>
+              </div>
+            </div>
+            <div
+              class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle"
+            >
+              <div
+                class="u-container-layout u-similar-container u-container-layout-8"
+              >
+                <div
+                  class="u-container-align-center u-container-style u-group u-palette-3-base u-shape-circle u-group-5"
+                  data-animation-name="customAnimationIn"
+                  data-animation-duration="1500"
+                  data-animation-delay="500"
+                >
+                  <div class="u-container-layout u-valign-middle">
+                    <h3
+                      class="u-align-center u-hover-feature u-text u-text-default u-text-9"
+                      data-animation-name="counter"
+                      data-animation-event="scroll"
+                      data-animation-duration="3000"
+                    >
+                      95%
+                    </h3>
+                  </div>
+                </div>
+                <h5
+                  class="u-align-center u-text u-text-body-alt-color u-text-default u-text-10"
+                >
+                  Data Analytics
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="u-align-center u-clearfix u-container-align-center u-palette-5-dark-3 u-section-5"
+      src=""
+      id="carousel_0bbc"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div
+          class="u-border-10 u-border-palette-5-dark-2 u-expanded-width-xs u-image u-image-circle u-preserve-proportions u-image-1"
+          data-image-width="721"
+          data-image-height="721"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1500"
+        >
+          <div
+            class="u-preserve-proportions-child"
+            style="padding-top: 100%"
+          ></div>
+        </div>
+        <h2
+          class="u-align-center u-text u-text-1"
+          data-animation-name="customAnimationIn"
+          data-animation-duration="1500"
+        >
+          Engineer Your Software Solutions with Unprecedented Speed
+        </h2>
+        <div class="u-form u-form-1">
+          <form
+            action="https://forms.nicepagesrv.com/v2/form/process"
+            class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+            source="email"
+            style=""
+          >
+            <div class="u-form-email u-form-group">
+              <label for="email-7771" class="u-label">Email</label>
+              <input
+                type="email"
+                placeholder="Enter a valid email address"
+                id="email-7771"
+                name="email"
+                class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-input u-input-rectangle"
+                required=""
+              />
+            </div>
+            <div class="u-form-group u-form-submit">
+              <a
+                href="#"
+                class="u-active-palette-5-dark-2 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-5-dark-2 u-palette-3-base u-radius-8 u-btn-1"
+                >Submit</a
+              >
+              <input
+                type="submit"
+                value="submit"
+                class="u-form-control-hidden"
+              />
+            </div>
+            <div class="u-form-send-message u-form-send-success">
+              Thank you! Your message has been sent.
+            </div>
+            <div class="u-form-send-error u-form-send-message">
+              Unable to send your message. Please fix errors then try again.
+            </div>
+            <input type="hidden" value="" name="recaptchaResponse" />
+            <input
+              type="hidden"
+              name="formServices"
+              value="42611270-836b-4cf9-084d-757e6a939284"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="u-align-center u-clearfix u-footer u-grey-80 u-footer"
+      id="sec-5ed1"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </footer>
+  </body>
 </html>
